@@ -24,9 +24,10 @@ namespace LazyDuchess.InjectionTest
 		}
 
 		public static void RemoveInteractions()
-        {
+        	{
 			// Remove the interactions we injected in Main.
 			InteractionInjector.UnregisterInteraction<Sim>(Sim.Chat.Singleton);
+			
 			InteractionInjector.UnregisterInteraction<Terrain>(Terrain.TeleportMeHere.Singleton);
 		}
 	}
